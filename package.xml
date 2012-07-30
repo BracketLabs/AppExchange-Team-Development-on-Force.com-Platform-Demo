@@ -5,16 +5,16 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
+        <members>dreamforceDemo</members>
         <name>ApexPage</name>
     </types>
     <types>
         <members>*</members>
-        <name>ApexTrigger</name>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>*</members>

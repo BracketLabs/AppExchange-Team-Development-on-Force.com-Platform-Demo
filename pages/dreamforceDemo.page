@@ -1,6 +1,6 @@
-<apex:page >
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page controller="dreamforceDemoController">
+
+	<apex:includeScript value="{!URLFOR($Resource.df_demo_shared,'js/jquery-1.7.2.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.df_demo_shared,'js/jquery-ui-1.8.22.custom.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.df_demo_js)}" />
 </apex:page>
