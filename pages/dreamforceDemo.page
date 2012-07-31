@@ -11,15 +11,18 @@ And demo how to take them from a generic development org, merge a new developers
 via GIT and ultimately prepare the codebase for upload to the AppExchange.
 
  -->
-<apex:page controller="dreamforceDemoController">
+<apex:page docType="html-5.0" controller="dreamforceDemoController" sidebar="false" standardStylesheets="false"> 
 	<!-- Begin header content -->
 	<!-- Zipped Static Resources, Javascript frameworks: jQuery,jQuery UI, latest as of Summer '12 
 		Remember:
 		1. Include full paths to files (including type) in zipped static resources
 		2. CSS should be relative to the image folder for any images referenced in .CSS files
 		-->
-	<apex:includeStyle value="{!URLFOR($Resource.df_demo_shared,'css/ui-lightness/jquery-ui-1.8.22.custom.css')}" />
+	<apex:styleSheet value="{!URLFOR($Resource.df_demo_css)}" />
+	<apex:styleSheet value="{!URLFOR($Resource.df_demo_shared,'css/bootstrap.min.css')}" />
+	<apex:styleSheet value="{!URLFOR($Resource.df_demo_shared,'css/ui-lightness/jquery-ui-1.8.22.custom.css')}" />
 	<apex:includeScript value="{!URLFOR($Resource.df_demo_shared,'js/jquery-1.7.2.min.js')}" />
+	<apex:includeScript value="{!URLFOR($Resource.df_demo_shared,'js/bootstrap.min.js')}" />
 	<apex:includeScript value="{!URLFOR($Resource.df_demo_shared,'js/jquery-ui-1.8.22.custom.min.js')}" />
 	
 	<!-- Flat .resource file for easy editing in IDE 
@@ -27,9 +30,25 @@ via GIT and ultimately prepare the codebase for upload to the AppExchange.
 	1.	No .resource in this reference -->
 	<apex:includeScript value="{!URLFOR($Resource.df_demo_js)}" />
 	<!-- End Header content -->
-	
+	<div class="container-fluid">
+	  <div class="row-fluid">
+	    <div class="span2 well" style="padding:8px 0;">
+      	<!--Sidebar content-->
+    	<ul class="nav nav-list">
+		  <li class="nav-header" id="leads-sidebar-header">
+		    Leads
+		  </li>
+		  <li class="active no-margin">
+		    <a href="#">Home</a>
+		  </li>
+		  
+		</ul>
+	    </div>
+	    <div class="span10 well">
+	    </div>
+	  </div>
+	</div>
 	<!-- Begin Body -->
-	
 	<!-- End Body -->
 	
 </apex:page>
