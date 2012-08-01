@@ -9,6 +9,10 @@
         <name>ApexPage</name>
     </types>
     <types>
+        <members>campaignmember</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomApplication</name>
     </types>

@@ -34,17 +34,29 @@ via GIT and ultimately prepare the codebase for upload to the AppExchange.
 	  <div class="row-fluid">
 	    <div class="span2 well" style="padding:8px 0;">
       	<!--Sidebar content-->
-    	<ul class="nav nav-list">
+    	<ul class="nav nav-list" id="leads-sidebar">
 		  <li class="nav-header" id="leads-sidebar-header">
 		    Leads
 		  </li>
-		  <li class="active no-margin">
-		    <a href="#">Home</a>
-		  </li>
-		  
 		</ul>
 	    </div>
 	    <div class="span10 well">
+	    	<p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;">
+				<span class="ui-icon ui-icon-mail-closed" style="float:left; margin:-2px 5px 0 0;"></span>
+				Email Settings 
+			</p>
+			<div class="slider-area">	
+				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<div id="email-1"></div>
+			</div>
+			<div class="slider-area">
+				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<div id="email-2"></div>
+			</div>
+			<div class="slider-area">
+				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<div id="email-3"></div>
+			</div>
 	    </div>
 	  </div>
 	</div>
