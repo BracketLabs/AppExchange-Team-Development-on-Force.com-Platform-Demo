@@ -50,4 +50,13 @@ global class dreamforceDemoController {
 		 upsert rate;
 	  	 return true;	
 	  } 
+	  
+	  /* 
+	   * updateEmailNotificationDetailsV1	
+	   *	Method stub -- need to finish implementing V1 of this WS call!
+	   */
+	  @RemoteAction
+	  global static boolean updateEmailNotificationDetailsV1(String id, Integer rate1, Integer rate2, Integer rate3){
+	  	return true;	
+	  }
 }
