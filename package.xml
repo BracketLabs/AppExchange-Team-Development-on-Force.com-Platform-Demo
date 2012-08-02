@@ -13,6 +13,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Dreamforce_Demo</members>
         <name>CustomTab</name>
     </types>
