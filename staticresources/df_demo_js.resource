@@ -30,6 +30,7 @@ setupLeadDetails = function(defaultDetails){
 	$('#rate3').text(rate3);
 
     $('#email-1').slider({
+    	range: "min",
     	value: rate1,
 		orientation: "horizontal",
 		min: 0,
@@ -45,6 +46,7 @@ setupLeadDetails = function(defaultDetails){
     });
     
     $('#email-2').slider({
+		range: "min",
     	value: rate2,
 		orientation: "horizontal",
 		min: 0,
@@ -60,6 +62,7 @@ setupLeadDetails = function(defaultDetails){
     });
     
     $('#email-3').slider({
+    	range: "min",
     	value: rate3,
 		orientation: "horizontal",
 		min: 0,
