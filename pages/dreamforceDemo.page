@@ -46,15 +46,15 @@ via GIT and ultimately prepare the codebase for upload to the AppExchange.
 				Email Settings 
 			</p>
 			<div class="slider-area">	
-				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<p class="send-frequency">Send Frequency: <span id="rate1"></span></p>
 				<div id="email-1"></div>
 			</div>
 			<div class="slider-area">
-				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<p class="send-frequency">Send Frequency: <span id="rate2"></span></p>
 				<div id="email-2"></div>
 			</div>
 			<div class="slider-area">
-				<p>Send Frequency: <span id="email-send-frequence-1"></span></p>
+				<p class="send-frequency">Send Frequency: <span id="rate3"></span></p>
 				<div id="email-3"></div>
 			</div>
 	    </div>

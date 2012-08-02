@@ -27,11 +27,11 @@ global class dreamforceDemoController {
 	  *	Appending namespace prefix is demoed with the Ruby script
 	  */
 	 @RemoteAction
-	 global static sObject loadLeadDetails(string id){
-	 	string soql = 'Select Id,Name, (Select Id, OwnerId, IsDeleted, Name, CreatedDate, CreatedById, LastModifiedDate, '+
-	 				  'LastModifiedById, SystemModstamp, Lead__c, Account__c, Rate1__c, Rate2__c, Rate3__c '+
-	 				  'From Email_Notification_Rates__r) From Lead l WHERE l.Id = \''+id+'\' LIMIT 1';
-	 	sObject leadDetails = Database.query(soql);
+	 global static List<sObject> loadLeadDetails(string id){
+	 	string soql = 'SELECT Lead__c,Rate1__c,Rate2__c,Rate3__c,Lead__r.Id,Lead__r.Name FROM EmailNotificationRates__c '+
+	 							' WHERE Lead__c =\''+id+'\' LIMIT 1';
+	 	List<sObject> leadDetails = Database.query(soql);
+	 	system.debug(leadDetails);
 	 	return leadDetails;
 	 }
 	 
@@ -41,13 +41,19 @@ global class dreamforceDemoController {
 	  */
 	  @RemoteAction
 	  global static boolean updateEmailNotificationDetails(String id, Integer rate1, Integer rate2, Integer rate3){
-	  	 // use a list here incase a EmailNotificationRates__c object doesn't exist
-	  	 EmailNotificationRates__c rate = database.query('SELECT Id,Lead__c,Rate1__c,Rate2__c,Rate3__c FROM EmailNotificationRates__c WHERE Lead__c = \''+Id+'\' LIMIT 1'); 	 
-		 rate.put('Lead__c',id);
-		 rate.put('Rate1__c',rate1);
-		 rate.put('Rate2__c',rate2);
-		 rate.put('Rate2__c',rate3);
-		 upsert rate;
+	  	 List<EmailNotificationRates__c> rates = new List<EmailNotificationRates__c>();
+	  	 // assign to a list so that a new record will be created if none exists
+	  	 rates = [SELECT Id,Lead__c,Rate1__c,Rate2__c,Rate3__c FROM EmailNotificationRates__c WHERE Lead__c = :id LIMIT 1]; 	 
+		 if(rates.size() == 0){
+		 	EmailNotificationRates__c rate = new EmailNotificationRates__c(Lead__c=id,Rate1__c=rate1,Rate2__c=rate2,Rate3__c=rate3);
+		 	rates.add(rate);
+		 }
+		 else{
+			 rates[0].put('Rate1__c',rate1);
+			 rates[0].put('Rate2__c',rate2);
+			 rates[0].put('Rate2__c',rate3);	
+		 }
+		 upsert rates;
 	  	 return true;	
 	  } 
 	  
@@ -58,5 +64,15 @@ global class dreamforceDemoController {
 	  @RemoteAction
 	  global static boolean updateEmailNotificationDetailsV1(String id, Integer rate1, Integer rate2, Integer rate3){
 	  	return true;	
+	  }
+	  
+	  global class preferencesWrapper{
+	  	Lead lead {get; set;}
+	  	EmailNotificationRates__c rate {get; set;}
+	  	
+	  	public preferencesWrapper(Lead l, EmailNotificationRates__c r){
+	  		lead = l;
+	  		rate = r;
+	  	}
 	  }
 }
