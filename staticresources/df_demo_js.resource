@@ -4,7 +4,7 @@ var setupLeadDetails;
 var updateEmailNotificationDetails;
 
 updateEmailNotificationDetails = function(){
-	dreamforceDemoController.updateEmailNotificationDetails($('li.active').find('a').attr('id'),
+	/*NS*/dreamforceDemoController.updateEmailNotificationDetails($('li.active').find('a').attr('id'),
 												$('#email-1').slider('value'),
 												$('#email-2').slider('value'),
 												$('#email-2').slider('value'),
@@ -63,7 +63,7 @@ setupLeadDetails = function(defaultDetails){
 }
 
 loadLeadDetails = function(id){
-    return dreamforceDemoController.loadLeadDetails(id,function(results,status){
+    return /*NS*/dreamforceDemoController.loadLeadDetails(id,function(results,status){
          if(status.status){
              setupLeadDetails(results);
          }
@@ -71,7 +71,7 @@ loadLeadDetails = function(id){
 }
 
 fetchLeads = function(callback) {
-  return dreamforceDemoController.fetchLeads(function(results, status) {
+  return /*NS*/dreamforceDemoController.fetchLeads(function(results, status) {
     var leads;
     var leadString = '';
     if (status.status) {
