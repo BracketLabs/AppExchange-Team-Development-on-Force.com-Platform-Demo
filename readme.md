@@ -44,6 +44,6 @@ structure:
 >project_name/src
 
 Example:
-<$ git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo df@dfjordan.com/src> 
+		git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo df@dfjordan.com/src 
 
 
