@@ -77,6 +77,24 @@ In our Jenkins Project, we will 'watch' the hosted Git repository and trigger a 
 
 ![Choose Initial Components](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/jenkins_github_configuration.png?raw=true)
 
+The Jenkin's build project basically runs 2 operations from the shell to populate our 'Test Org'
+
+	git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo sourceCode
+	ant deployUnpackaged
+
+The first step, copies the source-code from the hosted github repo, and the second uses the SFDC Ant Migration plugin to deploy the sourceCode in the 'sourceCode' directory to the test org.
+
+Configurations for the Ant Migration tool are stored in 'build.xml' and 'build.properties'
+
+They can be customized as needed, and there are more methods in the ANT migration tool for invoking test methods, etc. However, they are not being used for this process.
+
+![Choose Initial Components](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/jenkins_console_output.png?raw=true)
+
+Once the build has completed, the testing org is ready for UAT. The product owner can approve the team's work in a single org.
+
+#### Phase 3 - Building the managed package and namespacing ####
+
+
 
 
 
