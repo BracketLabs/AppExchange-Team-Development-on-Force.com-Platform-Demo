@@ -5,13 +5,35 @@
 >	on the SFDC platform and releasing them via the embedded distribution channel
 >	the AppExchange.
 
-## Primer ##
+## Getting Started ##
 
 Developers should have a general understanding of the following development concepts 
 to better understand the material presented here:
 
 + Salesforce.com APEX, Visualforce
-+ Javascript
-+ Git
-+ Amazon AWS
-+ Jenkins
++ Git (Version control)
++ Amazon AWS (Hosted virtual machine for running intermediary applications)
++ Jenkins (Continuous development build manager)
++ ANT (Java framework for automating the deployment of SFDC 'Meta-data' between orgs)
+
+### Developing ###
+
+The SFDC Platform uses the concept of an 'organization' for development purposes. This is 
+semi-analogous to an installation of the application stack in any other web-based platform.
+
+These 'organizations' are delimited by a username in for the format of an email address.
+
+A developer 'org' can be optained from: http://developer.salesforce.com
+
+The process for team developement relys on a series of orgs to develop and test applications
+and ulimately a specially annointed org, (aka "Packaging Org") where an application that is 
+'packaged' for distribution to the AppExchange.
+
+In total, this team development process recommends a total of 3 SFDC Orgs (naming convention is
+useful but none-critical):
+
+1. developer@project_developer.com (individual developer org) 
+2. developer@project_test.com (testing environment, for UAT's)
+3. developer@project.com (packaging org, manaaged package origin, beta package origin)
+
+
