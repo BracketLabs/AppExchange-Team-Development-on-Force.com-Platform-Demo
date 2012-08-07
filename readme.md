@@ -49,5 +49,5 @@ Example:
 
 Next, establish a new Force.com Project with the same name as the directory that is the parent of the 'src' folder:
 
-![Create Project in Force.com IDE](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/create_a_forcecom_project.png)
+![Create Project in Force.com IDE](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/create_a_forcecom_project.png?raw=true)
 
