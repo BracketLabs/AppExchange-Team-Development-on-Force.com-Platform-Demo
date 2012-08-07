@@ -45,7 +45,9 @@ structure:
 
 Example:
 
-	git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo df@dfjordan.com/src
+	git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo jordan@dfjordan.com/src
 
+Next, establish a new Force.com Project with the same name as the directory that is the parent of the 'src' folder:
 
+[Create Project in Force.com IDE](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/create_a_forcecom_project.png)
 
