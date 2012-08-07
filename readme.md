@@ -10,7 +10,7 @@
 Developers should have a general understanding of the following development concepts 
 to better understand the material presented here:
 
-+ Salesforce.com APEX, Visualforce
++ Salesforce.com APEX, Visualforce in the Force.com IDE
 + Git (Version control)
 + Amazon AWS (Hosted virtual machine for running intermediary applications)
 + Jenkins (Continuous development build manager)
@@ -30,10 +30,20 @@ and ulimately a specially annointed org, (aka "Packaging Org") where an applicat
 'packaged' for distribution to the AppExchange.
 
 In total, this team development process recommends a total of 3 SFDC Orgs (naming convention is
-useful but none-critical):
+useful but non-critical):
 
 1. developer@project_developer.com (individual developer org) 
 2. developer@project_test.com (testing environment, for UAT's)
 3. developer@project.com (packaging org, manaaged package origin, beta package origin)
+
+#### Phase 1 - Joining the development cycle ####
+
+Clone or establish a Git repository into the Force.com IDE workspace, using the following file
+structure:
+
+>project_name/src
+
+Example:
+<$ git clone https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo df@dfjordan.com/src> 
 
 
