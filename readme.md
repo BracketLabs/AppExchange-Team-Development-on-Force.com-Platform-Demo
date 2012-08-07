@@ -53,7 +53,7 @@ Next, establish a new Force.com Project with the same name as the directory that
 
 And choose not to download any components (granted the repo has already been established):
 
-![Choose Initial Components](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/choose_initial_project_conents.png?raw=true)
+![Choose Initial Components](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/choose_initial_project_contents.png?raw=true)
 
 And you have a development environment ready to go. Initializing your Force.com Org by right-clicking the directory tree and clicking 'Save to Server'.
 
