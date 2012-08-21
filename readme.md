@@ -92,7 +92,17 @@ They can be customized as needed, and there are more methods in the ANT migratio
 
 Once the build has completed, the testing org is ready for UAT. The product owner can approve the team's work in a single org.
 
+![Choose Initial Components](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/app_deployed_in_test_org.png?raw=true)
+
 #### Phase 3 - Building the managed package and namespacing ####
+
+The final step in building an App for the AppExchange is migrating it to the 'Packaging Org'. 
+
+Apps that use the 'managed package' system on SFDC must have a namespace prefix. More about that here: https://github.com/jordanbaucke/sfdc-namespace-prefix
+
+In addition to namespacing, to keep our App's code functioning normally once it has been installed into a customer's org, developers need to account for a number of items such as testing for specific Salesforce features that may or may-not be enabled in that customer's organization.
+
+
 
 
 
