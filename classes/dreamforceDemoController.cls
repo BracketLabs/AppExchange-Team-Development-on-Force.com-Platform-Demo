@@ -41,6 +41,7 @@ global class dreamforceDemoController {
 	  */
 	  @RemoteAction
 	  global static boolean updateEmailNotificationDetails(String id, Integer rate1, Integer rate2, Integer rate3){
+	 	 system.debug('Lead Id: '+id+' Rate1: '+rate1+' Rate2: '+rate2+' Rate3: '+rate3);
 	  	 List<EmailNotificationRates__c> rates = new List<EmailNotificationRates__c>();
 	  	 // assign to a list so that a new record will be created if none exists
 	  	 rates = [SELECT Id,Lead__c,Rate1__c,Rate2__c,Rate3__c FROM EmailNotificationRates__c WHERE Lead__c = :id LIMIT 1]; 	 
@@ -51,8 +52,9 @@ global class dreamforceDemoController {
 		 else{
 			 rates[0].put('Rate1__c',rate1);
 			 rates[0].put('Rate2__c',rate2);
-			 rates[0].put('Rate2__c',rate3);	
+			 rates[0].put('Rate3__c',rate3);	
 		 }
+			system.debug('Rates to be inserted: '+rates);
 		 upsert rates;
 	  	 return true;	
 	  } 
@@ -60,7 +62,7 @@ global class dreamforceDemoController {
 	  /* 
 	   * updateEmailNotificationDetailsV1	
 	   *	Method stub -- need to finish implementing V1 of this WS call!
-	   */
+	   *
 	  @RemoteAction
 	  global static boolean updateEmailNotificationDetailsV1(String id, Integer rate1, Integer rate2, Integer rate3){
 	  	return true;	
@@ -74,5 +76,5 @@ global class dreamforceDemoController {
 	  		lead = l;
 	  		rate = r;
 	  	}
-	  }
+	  }*/
 }

@@ -106,8 +106,23 @@ Before _uploading_ your managed package, add all components, and review dependen
 
 ![Review Dependencies](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/packaging_add_review_dependencies.png?raw=true)
 
-Once the managed package includes components and these dependencies cannot be changed.
+Once the managed package includes components and these dependencies cannot be changed. Consider if the destination org will require Chatter, tagging, permission sets, campaigns, etc.
 ![Review Information](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/dependency_information_review.png?raw=true)
+
+After clicking the 'Upload' button, the packaging process allows the user to manually define requirements (as the notice displayed by SFDC explains):
+*Administrators will not be allowed to install this package if their salesforce.com configuration does not meet the requirements specified (some requirements have been automatically detected as part of the sharing process).*
+![Manually add requirements](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/more_review_package_requirements.png?raw=true)
+
+Test code coverage:
+![Manually add requirements](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/test_method_failures.png?raw=true)
+
+Run all tests:
+![Manually add requirements](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/run_all_tests.png?raw=true)
+
+Review the results:
+![Manually add requirements](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/code_coverage_results.png?raw=true)
+
+
 
 
 
