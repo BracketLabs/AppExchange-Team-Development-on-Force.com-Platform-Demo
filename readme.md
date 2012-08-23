@@ -131,6 +131,15 @@ Adding the namespace prefix:
 Review the managed package:
 ![beta_packaging_now_avaliable](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/beta_and_managed_released_now_allowed.png?raw=true)
 
+Now the packaging org has changed: 
++ A version number appears in the upper left corner of the org. 
++ Namespace prefix appears next to objects, classes, etc. that are packaged
++ We can reference our web-service style methods with a namespace prefix.
++ "Managed beta" and "Managed release" are avaliable on the Package Upload page.
 
+![beta_packaging_now_avaliable](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/more_review_package_requirements.png?raw=true)
 
+Namespace prefixes in package members:
+![namespace_prefix](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/namespace_prefix_associated.png?raw=true)
 
+##That's it! Review the list of package release checklist items.##
