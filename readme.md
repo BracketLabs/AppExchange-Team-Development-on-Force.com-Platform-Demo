@@ -102,8 +102,12 @@ Apps that use the 'managed package' system on SFDC must have a namespace prefix.
 
 In addition to namespacing, to keep our App's code functioning normally once it has been installed into a customer's org, developers need to account for a number of items such as testing for specific Salesforce features that may or may-not be enabled in that customer's organization.
 
+Before _uploading_ your managed package, add all components, and review dependencies.
 
+![Review Dependencies](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/packaging_add_review_dependencies.png?raw=true)
 
+Once the managed package includes components and these dependencies cannot be changed.
+![Review Information](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/dependency_information_review.png?raw=true)
 
 
 
