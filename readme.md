@@ -122,7 +122,14 @@ Run all tests:
 Review the results:
 ![Manually add requirements](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/code_coverage_results.png?raw=true)
 
+Finally...ready to upload and add a namespace prefix to our org.
+![upload_complete](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/upload_complete.png?raw=true)
 
+Adding the namespace prefix:
+![namespace_prefix](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/set_namespace_prefix.png?raw=true)
+
+Review the managed package:
+![beta_packaging_now_avaliable](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/beta_and_managed_released_now_allowed.png?raw=true)
 
 
 
