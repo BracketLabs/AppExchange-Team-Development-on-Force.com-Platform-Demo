@@ -142,4 +142,30 @@ Now the packaging org has changed:
 Namespace prefixes in package members:
 ![namespace_prefix](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/namespace_prefix_associated.png?raw=true)
 
-##That's it! Review the list of package release checklist items.##
+###That's it! Review the list of package release checklist items.###
+
+##Using the AMI##
+
+AMI (Amazon managed image) is avaliable to associate with your Amazon web-services account and setup a preconfigured SFDC Jenkins-CI server.
+
+The AMI includes the following:
++ Jenkins (with the two projects from this demo pre-configured)
++ Java + Ant
++ SFDC Migration tools
++ Ruby + Namespacing script
+
+These projects are meant to serve as _examples_ and will most likely need to be reconfigured to run properly.
+
+The AMI is based on the Amazon ec2-linux. You need to have basic knowledge of ec2, SSH, and configuration to start and access the server.
+
+Once it's booted Jenkins will run at: http://yourec2ip:8080
+
+The project files for running the two projects are located at: _$./usr/local/jenkins/
+
+Each project requires the ANT Migration tool project files (at a minimum)
++build.xml
++build.properties
+
+
+
+
