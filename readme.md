@@ -151,21 +151,26 @@ AMI (Amazon managed image) is avaliable to associate with your Amazon web-servic
 The AMI includes the following:
 + <a href="https://www.jenkins-ci.org/">Jenkins</a> (with the two projects from this demo pre-configured)
 + Java + Ant
-+ SFDC Migration tools
-+ Ruby + Namespacing script
++ <a href="http://www.salesforce.com/us/developer/docs/daas/salesforce_migration_guide.pdf">SFDC Migration tools</a>
++ Ruby + <a hreef="https://github.com/jordanbaucke/sfdc-namespace-prefix">Namespacing script</a>
 
 These projects are meant to serve as _examples_ and will most likely need to be reconfigured to run properly.
 
 The AMI is based on the Amazon ec2-linux. You need to have basic knowledge of ec2, SSH, and configuration to start and access the server.
 
+Like other Amazon AMI's the default login is: <code>ec2-user</code> and your SSH public key.
+
 Once it's booted Jenkins will run at: <code>http://yourec2ip:8080</code>
+
+The Jenkins credentials are: <code>jenkins/dfdemo</code>
 
 The project files for running the two projects are located at: <code>$./usr/local/jenkins/</code>
 
 Each project requires the ANT Migration tool project files (at a minimum)
 +build.xml
 +build.properties
-
+ 
+*Remember that if your connecting a git repo, you need to add the authorized keys to the Jenkins user.*
 
 
 
