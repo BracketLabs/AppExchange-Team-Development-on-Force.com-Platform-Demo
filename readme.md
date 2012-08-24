@@ -158,9 +158,9 @@ These projects are meant to serve as _examples_ and will most likely need to be 
 
 The AMI is based on the Amazon ec2-linux. You need to have basic knowledge of ec2, SSH, and configuration to start and access the server.
 
-Once it's booted Jenkins will run at: http://yourec2ip:8080
+Once it's booted Jenkins will run at: <code>http://yourec2ip:8080</code>
 
-The project files for running the two projects are located at: _$./usr/local/jenkins/
+The project files for running the two projects are located at: <code>$./usr/local/jenkins/</code>
 
 Each project requires the ANT Migration tool project files (at a minimum)
 +build.xml
