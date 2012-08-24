@@ -167,8 +167,8 @@ The Jenkins credentials are: <code>jenkins/dfdemo</code>
 The project files for running the two projects are located at: <code>$./usr/local/jenkins/</code>
 
 Each project requires the ANT Migration tool project files (at a minimum)
-+build.xml
-+build.properties
++ build.xml
++ build.properties
  
 *Remember that if your connecting a git repo, you need to add the authorized keys to the Jenkins user.*
 
