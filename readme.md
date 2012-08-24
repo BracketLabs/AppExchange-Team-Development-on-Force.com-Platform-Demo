@@ -149,7 +149,7 @@ Namespace prefixes in package members:
 AMI (Amazon managed image) is avaliable to associate with your Amazon web-services account and setup a preconfigured SFDC Jenkins-CI server.
 
 The AMI includes the following:
-+ Jenkins (with the two projects from this demo pre-configured)
++ <a href="https://www.jenkins-ci.org/">Jenkins</a> (with the two projects from this demo pre-configured)
 + Java + Ant
 + SFDC Migration tools
 + Ruby + Namespacing script
