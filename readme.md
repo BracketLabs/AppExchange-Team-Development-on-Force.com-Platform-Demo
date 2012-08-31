@@ -142,7 +142,37 @@ Now the packaging org has changed:
 Namespace prefixes in package members:
 ![namespace_prefix](https://github.com/BracketLabs/AppExchange-Team-Development-on-Force.com-Platform-Demo/blob/master/-image/namespace_prefix_associated.png?raw=true)
 
-###That's it! Review the list of package release checklist items.###
+###Review the list of package release checklist items###
+
+Packaging Checklist
+
++ Complete code complete acceptance testing in @-test (include any updates to getting started wizard)
++ Run Force.com security scanner (http://security.force.com/security/tools/forcecom/scanner)
++ Deploy packaging namespacing & obfuscation script from Jenkins
++ Manually confirm new package elements in packaging instance including static resources, classes, triggers, pages, components, custom settings.  
+Check for:
++ naming convention
++ necessity
++ regression/legacy code
++ test fields
++ Manually confirm metadata of all custom objects (See a-d above).  Any changes must be logged as bugs/features as configuration modifications need to  occur at dev environment and NOT in packaging, otherwise they will continue to persist.
++ Manually confirm all packaging components are compatible with Group Edition and above.  Watch out for things like Record Types, Permission Sets, etc.
++ Calculate code coverage (must be >75%)
++ Run All Tests on Apex Classes and confirm no failures
+Create BETA package (carefully review package manifest)
++ Fresh install BETA to @enterprise, @professional, @group for full regression testing using test matrix across all browsers
++ Repeat steps 1 - 9 until all tests are approved
++ Create unobfuscated branch in Git and tag it with production release #
++ Package RELEASED package using naming convention - “ Month Year - Version number”
++ Update AppExchange listing with new release link
++ Update production
++ Update test drive
++ Update internal release matrix
++ Update release notes & user guide
++ Update installation guide
++ Kick off marketing release checklist (blog, email, etc.)
+
+Note: The process does not incorporate Extensions or Trialforce requirements.
 
 ##Using the AMI##
 
