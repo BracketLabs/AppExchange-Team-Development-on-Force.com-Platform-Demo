@@ -151,10 +151,10 @@ Packaging Checklist
 + Deploy packaging namespacing & obfuscation script from Jenkins
 + Manually confirm new package elements in packaging instance including static resources, classes, triggers, pages, components, custom settings.  
 *Check for:*
-++ naming convention
-++ necessity
-++ regression/legacy code
-++ test fields
++ naming convention
++ necessity
++ regression/legacy code
++ test fields
 + Manually confirm metadata of all custom objects (See a-d above).  Any changes must be logged as bugs/features as configuration modifications need to  occur at dev environment and NOT in packaging, otherwise they will continue to persist.
 + Manually confirm all packaging components are compatible with Group Edition and above.  Watch out for things like Record Types, Permission Sets, etc.
 + Calculate code coverage (must be >75%)
