@@ -176,7 +176,7 @@ Note: The process does not incorporate Extensions or Trialforce requirements.
 
 ##Using the AMI##
 
-AMI (Amazon managed image) is avaliable to associate with your Amazon web-services account and setup a preconfigured SFDC Jenkins-CI server. The ID of the Bracket Labs CI AMI is: <code>ami-ed7a5da8</code>
+AMI (Amazon managed image) is avaliable to associate with your Amazon web-services account and setup a preconfigured SFDC Jenkins-CI server. The ID of the Bracket Labs CI AMI is: <code>ami-ed7a5da8</code>, and can be found under the _Community AMIs_ section of your Ec2 Launch Wizard.
 
 The AMI includes the following:
 + <a href="https://www.jenkins-ci.org/">Jenkins</a> (with the two projects from this demo pre-configured)
